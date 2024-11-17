@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voice to Text</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    #result, #translatedResult {
+      margin: 10px 0;
+      padding: 10px;
+      min-height: 50px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+    button:disabled {
+      background-color: #cccccc;
+    }
+    .recording {
+      background-color: #f44336 !important;
+    }
+    select {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .section {
+      margin: 10px 0;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <h3>Convertisseur Voix en Texte</h3>
+  <select id="langSelect">
+    <option value="fr-FR">Français</option>
+    <option value="en-US">English</option>
+  </select>
+  <button id="startRecord">Commencer l'enregistrement</button>
+  <div id="result"></div>
+  <div class="section">
+    <button id="translate">Traduire en anglais</button>
+    <div id="translatedResult"></div>
+  </div>
+  <button id="copy">Copier le texte</button>
+  <script src="popup.js"></script>
+</body>
+</html> 

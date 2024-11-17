@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Voice to Text Translator",
+  "version": "1.0",
+  "description": "Convertit la voix en texte",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "audioCapture"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+} 
